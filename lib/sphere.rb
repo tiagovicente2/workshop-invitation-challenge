@@ -5,15 +5,14 @@ class Sphere < GeometricBase
 
   def initialize(radius)
 	 @radius = radius
-	 @pi = PI
   end
 
   def area
-    multiply(multiply(4, @pi), exponentiation(@radius, 2) )
+    multiply(multiply(4, PI), exponentiation(@radius, 2) )
   end
 
   def perimeter
-    multiply(multiply(2, @radius), @pi)
+    multiply(multiply(2, @radius), PI)
   end
 
   def volume
@@ -21,6 +20,6 @@ class Sphere < GeometricBase
     #@part2 = multiply(@part1, @pi)
     #multiply(@part2, 4/3)
 
-    multiply(multiply(exponentiation(@radius, 3), @pi), 4/3)
+    multiply(multiply(exponentiation(@radius, 3), PI), 4/3)
   end
 end

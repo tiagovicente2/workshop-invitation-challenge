@@ -5,14 +5,13 @@ class Circle < GeometricBase
 
   def initialize(radius)
     @radius = radius
-    @pi = PI
   end
 
   def area
-    multiply(exponentiation(@radius, 2), @pi)
+    multiply(exponentiation(@radius, 2), PI)
   end
 
   def perimeter
-    multiply(multiply(2, @pi), @radius)
+    multiply(multiply(2, PI), @radius)
   end
 end
